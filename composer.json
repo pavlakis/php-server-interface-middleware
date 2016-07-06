@@ -16,9 +16,12 @@
   ],
   "autoload": {
     "psr-4": {
-      "pavlakis\\middleware\\server\\tests\\" : "tests/phpunit",
-      "pavlakis\\middleware\\server\\": "src"
+      "Pavlakis\\Middleware\\Server\\Tests\\" : "tests/phpunit",
+      "Pavlakis\\Middleware\\Server\\": "src"
     }
+  },
+  "config": {
+    "bin-dir": "bin"
   },
   "require": {
     "php": ">=5.5.0"
