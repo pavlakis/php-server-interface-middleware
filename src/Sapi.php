@@ -56,6 +56,8 @@ final class Sapi
             if (!is_null($this->notFoundResponse)) {
                 $response = $this->notFoundResponse;
             }
+
+            return $response;
         }
 
         return $next($request, $response);
