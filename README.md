@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/pavlakis/php-server-interface-middleware)](https://travis-ci.org/pavlakis/php-server-interface-middleware)
+[![Build Status](https://travis-ci.org/pavlakis/php-server-interface-middleware.svg?branch=master)](https://travis-ci.org/pavlakis/php-server-interface-middleware)
 
 # Server Interface (SAPI) Middleware
 
