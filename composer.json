@@ -1,0 +1,33 @@
+{
+  "name": "pavlakis/php-server-interface-middleware",
+  "description": "Middleware to filter based on server type interface e.g. PHP SAPI",
+  "keywords": [
+    "slim", "cli", "php-sapi", "sapi", "server", "interface", "middleware"
+  ],
+  "homepage": "http://github.com/pavlakis/php-server-interface-middleware",
+  "type": "library",
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Antonis Pavlakis",
+      "email": "adoni@pavlakis.info",
+      "homepage": "https://pavlakis.info"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Pavlakis\\Middleware\\Server\\Tests\\" : "tests/phpunit",
+      "Pavlakis\\Middleware\\Server\\": "src"
+    }
+  },
+  "config": {
+    "bin-dir": "bin"
+  },
+  "require": {
+    "php": ">=5.5.0"
+  },
+  "require-dev": {
+    "slim/slim": "~3.0",
+    "phpunit/phpunit": "^4.0"
+  }
+}
