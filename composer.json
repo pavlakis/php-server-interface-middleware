@@ -11,17 +11,24 @@
     {
       "name": "Antonis Pavlakis",
       "email": "adoni@pavlakis.info",
-      "homepage": "https://pavlakis.info"
+      "homepage": "https://pavlakis.uk"
     }
   ],
   "autoload": {
     "psr-4": {
-      "Pavlakis\\Middleware\\Server\\Tests\\" : "tests/phpunit",
       "Pavlakis\\Middleware\\Server\\": "src"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "Pavlakis\\Middleware\\Server\\Tests\\" : "tests/phpunit"
+    }
+  },
   "config": {
-    "bin-dir": "bin"
+    "bin-dir": "bin",
+    "preferred-install": {
+      "*": "dist"
+    }
   },
   "require": {
     "php": ">=5.5.0"
@@ -29,5 +36,9 @@
   "require-dev": {
     "slim/slim": "~3.0",
     "phpunit/phpunit": "^4.0"
+  },
+  "scripts": {
+    "test": "phpunit -c tests/phpunit/phpunit.xml --colors=always",
+    "static-analysis": "phpstan analyse src --level 7"
   }
 }

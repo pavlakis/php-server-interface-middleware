@@ -1,4 +1,8 @@
-[![Build Status](https://travis-ci.org/pavlakis/php-server-interface-middleware)](https://travis-ci.org/pavlakis/php-server-interface-middleware)
+[![Build Status](https://travis-ci.org/pavlakis/php-server-interface-middleware.svg)](https://travis-ci.org/pavlakis/php-server-interface-middleware)
+[![Total Downloads](https://img.shields.io/packagist/dt/pavlakis/php-server-interface-middleware.svg)](https://packagist.org/packages/pavlakis/php-server-interface-middleware)
+[![Latest Stable Version](https://img.shields.io/packagist/v/pavlakis/php-server-interface-middleware.svg)](https://packagist.org/packages/pavlakis/php-server-interface-middleware)
+[![codecov](https://codecov.io/gh/pavlakis/php-server-interface-middleware/branch/master/graph/badge.svg)](https://codecov.io/gh/pavlakis/php-server-interface-middleware)
+[![PHPStan](https://img.shields.io/badge/PHPStan-enabled-brightgreen.svg?style=flat)](https://github.com/phpstan/phpstan)
 
 # Server Interface (SAPI) Middleware
 
