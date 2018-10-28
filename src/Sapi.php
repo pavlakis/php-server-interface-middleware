@@ -6,11 +6,10 @@
  * Pass a response object for action to take when whitelist not found. Defaults to 403.
  *
  * @link        https://github.com/pavlakis/php-server-interface-middleware
- * @copyright   Copyright © 2016 Antonis Pavlakis
+ * @copyright   Copyright © 2016-2018 Antonis Pavlakis
  * @author      Antonis Pavlakis
  * @license     https://github.com/pavlakis/php-server-interface-middleware/blob/master/LICENSE (BSD 3-Clause License)
  */
-
 namespace Pavlakis\Middleware\Server;
 
 use Psr\Http\Message\ServerRequestInterface;
@@ -24,14 +23,13 @@ final class Sapi
     private $serverWhiteList = [];
 
     /**
-     * @var ResponseInterface
+     * @var ResponseInterface|null
      */
     private $notFoundResponse;
 
     /**
-     * Sapi constructor.
-     * @param array $serverWhiteList
-     * @param ResponseInterface $notFoundResponse
+     * @param array                  $serverWhiteList
+     * @param ResponseInterface|null $notFoundResponse
      */
     public function __construct(array $serverWhiteList, ResponseInterface $notFoundResponse = null)
     {
@@ -50,7 +48,6 @@ final class Sapi
      */
     public function __invoke(ServerRequestInterface $request, ResponseInterface $response, callable $next)
     {
-
         if (!in_array(php_sapi_name(), $this->serverWhiteList)) {
             $response = $response->withStatus(403);
             if (!is_null($this->notFoundResponse)) {
